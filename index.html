@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User</title>
+</head>
+<body>
+
+    <form id="create-user">
+        <h4>Customize user</h4>
+        <div class="fieldset-wrapper">
+            <fieldset class="radio-group">
+                <legend>Gender:</legend>
+                <div>
+                    <input type="radio" name="radio" id="radio" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <input type="radio" name="radio" id="radio" value="male">
+                    <label for="male">Male</label>
+                </div>
+            </fieldset>
+        </div>
+        <h4>From where?</h4>
+        <select name="country" id="country"></select>
+        <h4>How many users?</h4>
+        <select name="quantity" id="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        <input type="submit" value="Create customized user">
+    </form>
+
+    <form id="random-user-form">
+        <input type="submit" value="Create random user">
+    </form>
+
+    <div id="random-user-output"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
