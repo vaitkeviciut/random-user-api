@@ -5,43 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random User</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <form id="create-user">
-        <h4>Customize user</h4>
-        <div class="fieldset-wrapper">
-            <fieldset class="radio-group">
-                <legend>Gender:</legend>
-                <div>
-                    <input type="radio" name="radio" id="radio" value="female">
-                    <label for="female">Female</label>
+    <div class="container">
+        <div class="form-wrapper">
+            <form id="form">
+                <div class="form-title-wrapper">
+                    <h2 class="form-title">Random</h2>
+                    <h3 class="form-description">people data generator</h3>
                 </div>
-                <div>
-                    <input type="radio" name="radio" id="radio" value="male">
-                    <label for="male">Male</label>
+                <fieldset class="fieldset">
+                    <legend class="form-legend">Select gender:
+                        <label class="label-radio-male" for="gender1">Male</label>
+                        <input class="radio" type="radio" id="gender1" name="gender" value="male">
+                        <label class="label-radio-female" for="gender1">Female</label>
+                        <input class="radio" type="radio" id="gender2" name="gender" value="female">
+                    </legend>
+                </fieldset>
+                <div class="section-wrapper">
+                    <label class="label" for="results">Select number of people to create:</label>
+                    <select class="input" name="results" id="results"></select>
                 </div>
-            </fieldset>
+        
+                <div class="section-wrapper">
+                    <label class="label" for="countries">Select country:</label>
+                    <select class="input" name="countries" id="countries"></select>
+                </div>
+                <div class="buttons-wrapper">
+                    <input class="generate-button selected" type="submit" id="submit-button" value="Generate selected person">
+                    <input class="generate-button random" type="submit" id="random-submit-button" value="Generate random person">
+                </div>
+            </form>
         </div>
-        <h4>From where?</h4>
-        <select name="country" id="country"></select>
-        <h4>How many users?</h4>
-        <select name="quantity" id="quantity">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-        </select>
-        <input type="submit" value="Create customized user">
-    </form>
-
-    <form id="random-user-form">
-        <input type="submit" value="Create random user">
-    </form>
-
-    <div id="random-user-output"></div>
+        
+        <div class="random-user-wrapper">
+            
+        </div>
+    </div>
     
     <script src="script.js"></script>
 </body>
