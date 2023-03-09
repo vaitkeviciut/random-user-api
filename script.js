@@ -70,10 +70,10 @@ function generateUser(results, gender, nat) {
                 const personalInfoList = document.createElement('ul')
                 personalInfoList.classList.add('fake-person-list')
                 const personalInfoElement1 = document.createElement('li')
-                personalInfoElement1.textContent = `Phone number: ${email}`
+                personalInfoElement1.textContent = `Phone number: ${phone}`
                 personalInfoElement1.classList.add('fake-person-list-tem')
                 const personalInfoElement2 = document.createElement('li')
-                personalInfoElement2.textContent = `Email address: ${phone}`
+                personalInfoElement2.textContent = `Email address: ${email}`
                 personalInfoElement2.classList.add('fake-person-list-tem')
 
                 personalInfoList.append(personalInfoElement1, personalInfoElement2)
